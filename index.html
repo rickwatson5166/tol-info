@@ -87,7 +87,7 @@ footer p { max-width: 70ch; }
   <h1>See which companies your computer is sending data to.</h1>
   <p class="lede">TOL is a small program that watches a computer's network connections and reports them in plain language. It does not block anything, and it never reads what is inside the traffic.</p>
   <ul class="status">
-    <li>Version 0.4.5</li>
+    <li>Version 0.4.6</li>
     <li>Mac: working, tested on an Intel Mac</li>
     <li>Windows: built, tested by machine</li>
     <li>Not yet code-signed</li>
@@ -152,7 +152,7 @@ footer p { max-width: 70ch; }
   <ol class="steps">
     <li>Record for as long as needed, then create the evidence package.</li>
     <li>Open the package folder in a terminal and run <code>python3 verify.py</code>.</li>
-    <li>Optionally add a trusted timestamp. TOL sends only a fingerprint of the package to an independent timestamp authority, so the time no longer rests on the computer's own clock.</li>
+    <li>Optionally add a trusted timestamp. TOL sends only a fingerprint of the package to an independent timestamp authority, so the time no longer rests on the computer's own clock. The checking script verifies the authority's signature itself, with nothing extra to install.</li>
   </ol>
 </section>
 
